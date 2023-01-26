@@ -1,4 +1,3 @@
-/* eslint-disable */
 export default function getFullResponseFromAPI(success)
 {
   return (new Promise((resolve, reject) => {
@@ -9,8 +8,7 @@ export default function getFullResponseFromAPI(success)
       };
       resolve(obj);
     } else {
-      reject();
-      throw new Error("The fake API is not working currently");
+      reject(Error("The fake API is not working currently"));
     }
   }));
 }
