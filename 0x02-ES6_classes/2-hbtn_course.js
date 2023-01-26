@@ -20,9 +20,11 @@ export default class HolbertonCourse {
   get name() {
     return this._name;
   }
+
   get length() {
     return this._length;
   }
+
   get students() {
     return this._students;
   }
@@ -33,12 +35,14 @@ export default class HolbertonCourse {
     }
     this._name = nam;
   }
+
   set length(leng) {
    if (typeof leng !== 'number') {
       throw new TypeError('Length must be a number');
     }
     this._length = leng;
   }
+
   set students(stud) {
     if (!Array.isArray(stud)) {
       throw new TypeError('must be a array');
