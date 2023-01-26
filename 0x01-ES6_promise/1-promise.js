@@ -6,9 +6,11 @@ export default function getFullResponseFromAPI(success)
       const obj = {
         status: 200,
         body: 'Success'
-      }
-      resolve(obj)
+      };
+      resolve(obj);
     } else {
-      reject("The fake API is not working currently")
+      const err = {error: "The fake API is not working currently"}
+      reject(err.error);
+    }
   }));
 }
