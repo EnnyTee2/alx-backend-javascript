@@ -24,11 +24,11 @@ export default class HolbertonCourse {
     return this._length;
   }
   get students() {
-    return this._students
+    return this._students;
   }
 
   set name(nam) {
-    if (typeof na !== 'string') {
+    if (typeof nam !== 'string') {
       throw new TypeError('Name must be a string');
     }
     this._name = nam;
