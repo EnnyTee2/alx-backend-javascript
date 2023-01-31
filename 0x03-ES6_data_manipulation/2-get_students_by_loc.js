@@ -1,5 +1,6 @@
 const getStudentsByLocation = (studentList, city) => {
-  return (studentList.filter(studentList => studentList.location == city));
+  const arr = studentList.filter(student => student.location == city);
+  return arr;
 };
 
 export default getStudentsByLocation;
