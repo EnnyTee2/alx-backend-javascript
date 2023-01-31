@@ -1,8 +1,8 @@
 const getStudentIdsSum = (studentlist) => {
-  const id_sum = studentlist.reduce(
+  const id = studentlist.reduce(
     (acc, currentid) => acc + currentid.id, 0,
   );
-  return id_sum;
+  return id;
 };
 
 export default getStudentIdsSum;
