@@ -1,5 +1,5 @@
-export default function getListStudents() {
-  return array.Of({'id': 1,
+export default const getListStudents() {
+  return Array.of({'id': 1,
                   'firstName': 'Guillaume',
                   'location': 'San Francisco' },
                   {'id': 2,
