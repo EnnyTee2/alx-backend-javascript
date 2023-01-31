@@ -1,5 +1,5 @@
 export default function getListStudents() {
-  return (Array.of({ id: 1,
+  return (Array({ id: 1,
                   firstName: 'Guillaume',
                   location: 'San Francisco' },
                   { id: 2,
