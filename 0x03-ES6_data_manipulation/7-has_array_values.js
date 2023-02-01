@@ -1,9 +1,9 @@
-export default function hasValuesFromArray(set, array) {
-  const set2 = new Set(array);
-  for (element of set2.values()) {
+const hasValuesFromArray = (set, array) => {
+  for (element of array) {
     if (!set.has(element)) {
       return false;
     }
   } 
   return true;
 }
+export default hasValuesFromArray;
