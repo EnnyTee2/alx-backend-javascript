@@ -3,7 +3,7 @@ const hasValuesFromArray = (set, array) => {
     if (!set.has(element)) {
       return false;
     }
-  } 
+  }
   return true;
 };
 
